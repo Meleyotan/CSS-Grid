@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meleyotan Oyeleke">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        div{
+            font-size:xxx-large;
+            text-align: center;
+            font-weight: bold;
+        }
+        #no_one{
+            background-color: aqua;
+            grid-area: h;
+        }
+        #no_two{
+            background-color: aquamarine;
+            grid-area: m;
+        }
+        #no_three{
+            background-color:bisque;
+            grid-area: c;
+        }
+        #no_four{
+            background-color: burlywood;
+            grid-area: f;
+        }
+        #no_five{
+            background-color: cadetblue;
+            grid-area: a;
+        }
+        #no_six{
+            background-color: rgb(146, 146, 146);
+            grid-area: e;
+        }
+        #no_seven{
+            background-color: rgb(92, 18, 18);
+            grid-area: b;
+        }
+        
+        /* #no_eight{
+            background-color: rgba(180, 192, 16, 0.513);
+        }
+        #no_nine{
+            background-color: rgb(97, 76, 190);
+        } */
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows:50px auto 50px 50px;
+            grid-gap:3px;
+            grid-template-areas:
+            "h h h h h h h h h h h h"
+            "m m c c c c c c c c c c"
+            "m m c c c c c c c c c c"
+            "f f f f f f f f f f f f";
+            height: 100vh;
+        }
+        .container_two{
+            display: grid;
+            grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(100px,6fr));
+            grid-auto-rows: 100px;
+            height:100vh;
+        }
+        #container_two_one{
+            background-color:bisque;
+        }
+        #container_two_two{
+            background-color: aquamarine;
+        }
+        #container_two_three{
+            background-color: blanchedalmond;
+        }
+        #container_two_four{
+            background-color: cornflowerblue;
+        }
+        #container_two_five{
+            background-color: darkgrey;
+        }
+        #container_two_six{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="no_one">1</div>
+    <div id="no_two">2</div>
+    <div id="no_three">3</div>
+    <div id="no_four">4</div>
+    <!-- <div id="no_five">5</div>
+    <div id="no_six">6</div>
+    <div id="no_seven">7</div>
+    <div id="no_eight">8</div>
+    <div id="no_nine">9</div> -->
+    </div>
+
+    <!-- Section 2 -->
+    <div class="container_two">
+        <div id="container_two_one"></div>
+        <div id="container_two_two"></div>
+        <div id="container_two_three"></div>
+        <div id="container_two_four"></div>
+        <div id="container_two_five"></div>
+        <div id="container_two_six"></div>
+    </div>
+</body>
+</html>

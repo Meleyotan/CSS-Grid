@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meleyotan Oyeleke">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template: repeat(4,100px) / repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 3px;
+            grid-auto-rows: 100px;
+        }
+        body{
+            margin: 0 auto;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            font-size: large;
+        }
+        #no_one{
+            background-color: aqua;
+            /* grid-column: 2/-1; */
+        }
+        #no_two{
+            background-color: aquamarine;
+            /* grid-column: 1/2; */
+            /* grid-row: 1/span 3; */
+        }
+        #no_three{
+            background-color:bisque;
+            /* grid-column: 2/-1; */
+        }
+        #no_four{
+            background-color: burlywood;
+            /* grid-column:1/2; */
+        }
+        #no_five{
+            background-color: cadetblue;
+            /* grid-column:2/-1; */
+        }
+        #no_six{
+            background-color: rgb(146, 146, 146);
+            /* grid-column: 1/2; */
+        }
+        #no_seven{
+            background-color: rgb(92, 18, 18);
+            /* grid-column: 2/-1; */
+        }
+        
+         #no_eight{
+            background-color: rgba(180, 192, 16, 0.513);
+            /* grid-column: 1/-1; */
+        }
+        #no_one:hover{
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Why learn CSS Grid Layout?</h1>
+    <div class="container">
+        <div id="no_one">Easier to create two dimensional layouts</div>
+        <div id="no_two">Simple Markup</div>
+        <div id="no_three">Flexible</div>
+        <div id="no_four">Skip Frameworks</div>
+        <div id="no_five">Browser Support</div>
+        <div id="no_six">6</div>
+        <div id="no_seven">7</div>
+        <div id="no_eight">See examples</div>
+    </div>
+</body>
+</html>
